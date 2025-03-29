@@ -20,7 +20,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "https://poll-vault-mern-backend.onrender.com/login",
+        "https://poll-vault-mern-backend.onrender.com/api/auth/login",
         formData
       );
       console.log("frontend user data", res.data.token); // You will get the user data and token
