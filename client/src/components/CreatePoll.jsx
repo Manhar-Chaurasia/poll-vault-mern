@@ -86,7 +86,7 @@ const CreatePoll = ({ data }) => {
     const token = localStorage.getItem("authToken");
     try {
       const res = await axios.post(
-        "https://poll-vault-mern-backend.onrender.com/create-poll",
+        "https://poll-vault-mern-backend.onrender.com/api/a/create-poll",
         formData,
         // {
         //   headers: { Authorization: `Bearer ${token}` },
