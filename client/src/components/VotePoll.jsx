@@ -66,7 +66,7 @@ const VotePoll = ({ demoPollDetails }) => {
       console.log("sending vote data to backend: ", voteData);
       try {
         const res = await axios.post(
-          `http://localhost:5000/api/vote/${id}`,
+          `https://poll-vault-mern-backend.onrender.com/${id}`,
           voteData
         );
         console.log("res of handleVotePollSubmit fn in frontend: ", res);
