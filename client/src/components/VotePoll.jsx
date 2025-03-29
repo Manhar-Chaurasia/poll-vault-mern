@@ -17,7 +17,7 @@ const VotePoll = ({ demoPollDetails }) => {
   const fetchPollDetails = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:5000/api/a/poll-details/${id}` // return the last created poll
+        `https://poll-vault-mern-backend.onrender.com/poll-details/${id}` // return the last created poll
       );
       console.log("The res log is : ", res);
 
