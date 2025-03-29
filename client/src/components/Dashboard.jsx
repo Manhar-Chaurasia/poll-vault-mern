@@ -15,7 +15,7 @@ const Dashboard = () => {
       console.log("userrrrr id: ", id);
       
       const res = await axios.get(
-        `https://poll-vault-mern-backend.onrender.com/${id}`
+        `https://poll-vault-mern-backend.onrender.com/api/a/get-polls/${id}`
       );
       console.log("The poll log is : ", res?.data);
 
