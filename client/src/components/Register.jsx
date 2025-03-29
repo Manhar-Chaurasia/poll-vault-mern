@@ -21,7 +21,7 @@ const Register = () => {
     try {
       console.log(formData);
       const res = await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "https://poll-vault-mern-backend.onrender.com/register",
         formData
       );
       console.log("res in handleSubmit fn: ", res); // You will get the user data and token
