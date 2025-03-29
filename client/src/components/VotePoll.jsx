@@ -17,7 +17,7 @@ const VotePoll = ({ demoPollDetails }) => {
   const fetchPollDetails = async () => {
     try {
       const res = await axios.get(
-        `https://poll-vault-mern-backend.onrender.com/poll-details/${id}` // return the last created poll
+        `https://poll-vault-mern-backend.onrender.com/api/a/poll-details/${id}` // return the last created poll
       );
       console.log("The res log is : ", res);
 
@@ -66,7 +66,7 @@ const VotePoll = ({ demoPollDetails }) => {
       console.log("sending vote data to backend: ", voteData);
       try {
         const res = await axios.post(
-          `https://poll-vault-mern-backend.onrender.com/${id}`,
+          `https://poll-vault-mern-backend.onrender.com/api/vote/${id}`,
           voteData
         );
         console.log("res of handleVotePollSubmit fn in frontend: ", res);
