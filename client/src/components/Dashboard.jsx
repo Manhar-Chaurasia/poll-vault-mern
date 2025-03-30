@@ -27,6 +27,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     fetchPolls();
+    alert("calling fetchpolls()");
   }, []);
 
   const getDay = (dateString) => {
