@@ -65,7 +65,7 @@ function App() {
           //     </ProtectedRoute>
           //   }
           // />
-        </Routes>
+        // </Routes>
       </BrowserRouter>
     </div>
   );
