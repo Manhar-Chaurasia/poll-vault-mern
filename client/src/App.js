@@ -55,18 +55,11 @@ function App() {
           <Route path="/results" element={<VoteResults />} />
 
           <Route path="/dashboard" element={<Dashboard />} />
-          
-
-          // <Route
-          //   path="/dashboard"
-          //   element={
-          //     <ProtectedRoute>
-          //       <Dashboard />
-          //     </ProtectedRoute>
-          //   }
-          // />
-        // </Routes>
+        </Routes>
       </BrowserRouter>
+
+          
+        
     </div>
   );
 }
