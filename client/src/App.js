@@ -54,7 +54,14 @@ function App() {
           <Route path="/vote-poll/:id" element={<VotePoll />} />
           <Route path="/results" element={<VoteResults />} />
 
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route
+            path="/dashboard"
+            element={
+              <ProtectedRoute>
+                <Dashboard />
+              </ProtectedRoute>
+            }
+          />
         </Routes>
       </BrowserRouter>
 
